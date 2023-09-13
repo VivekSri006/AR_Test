@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Three.js Example</title>
+  <!-- <script src="node_modules/three/build/three.js"></script> -->
+  <!-- <script src="node_modules/ar.js/aframe/build/aframe-ar.js"></script> -->
+  <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+<script src="https://raw.githack.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script>
+ 
+</head>
+<body style="margin: 0;">
+  <a-scene embedded arjs>
+    <a-marker preset="hiro">
+        <a-box position='0 0.5 0' material='color: yellow;'depth="2" height="14" width="10.5"></a-box>
+    </a-marker>
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+</html>
